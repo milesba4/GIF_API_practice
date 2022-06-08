@@ -15,3 +15,16 @@ background-color: aquamarine;
     padding: 15px 32px;
   }
 
+
+
+  h1{
+
+    font-size: 30px;
+    color:rgb(98, 98, 197);
+  }
+
+  label{
+
+    color: blueviolet;
+    size: 10px;
+  }
