@@ -7,6 +7,7 @@ const submitEL = document.querySelector("#GIF-submit")
 const resultsEl = document.querySelector("#GIF-results")
 const loadButton= document.querySelector(".load")
 const MY_API_KEY = "nOjzgnRK5wSxGHruvjd3HVSux7Zxk46H"
+const pageNum = 0
 const limit = 10
 const rating = 'g'
 
@@ -24,6 +25,8 @@ async function getResults(evt){
     console.log(urlAPI)
     const response = await fetch(urlAPI)
     const jsonResponse = await response.json();
+    const offSet = jsonResponse.pagination.offset
+    console.log('offset=',offSet)
     console.log(jsonResponse);
     console.log("evt=",evt)
     console.log("search=",input)
@@ -64,3 +67,4 @@ function handleSubmitForm(evt){
     console.log("resultsEL=",resultsEL.innerHTML)
 
 
+    cssStyleSheet.insertRule(`${selector} {${styles}}`, 0);
