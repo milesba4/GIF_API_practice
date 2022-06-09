@@ -1,6 +1,6 @@
 *{
 
-background-color: aquamarine;
+background-color: whitesmoke;
 
 
 }
@@ -9,13 +9,6 @@ background-color: aquamarine;
     transition-duration: 0.1s;
   }
   
-  #GIF-submit:hover {
-    background-color: aquamarine; 
-    color: white;
-    padding: 15px 32px;
-  }
-
-
 
   h1{
 

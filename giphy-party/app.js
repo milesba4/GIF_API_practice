@@ -8,8 +8,7 @@ const resultsEl = document.querySelector("#GIF-results")
 const loadButton= document.querySelector(".load")
 const MY_API_KEY = "nOjzgnRK5wSxGHruvjd3HVSux7Zxk46H"
 let pageNum = 0
-const limit = 10
-const rating = 'g'
+const limit = 
 
 
 //Event listener for submission
@@ -49,6 +48,9 @@ function displayResults(gifData) {
         `     
 
     }
+    loadButton.classList.remove("hidden");
+    console.log("loadButton=",loadButton)
+
 }
 
 
@@ -65,8 +67,8 @@ function showMore(evt){
     getResults(evt)
     displayResults(evt)
     pageNum+=1
-    
-
+    loadButton.classList.add('hidden');
+    console.log("hello")
 
 }
     console.log("url=", gifData)
