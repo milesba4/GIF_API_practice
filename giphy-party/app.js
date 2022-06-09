@@ -7,7 +7,7 @@ const submitEL = document.querySelector("#GIF-submit")
 const resultsEl = document.querySelector("#GIF-results")
 const loadButton= document.querySelector(".load")
 const MY_API_KEY = "nOjzgnRK5wSxGHruvjd3HVSux7Zxk46H"
-const pageNum = 0
+let pageNum = 0
 const limit = 10
 const rating = 'g'
 
@@ -60,6 +60,15 @@ function handleSubmitForm(evt){
 
 }
 
+
+function showMore(evt){
+    getResults(evt)
+    displayResults(evt)
+    pageNum+=1
+    
+
+
+}
     console.log("url=", gifData)
     console.log("url=", gifData.data[0])
     console.log("url=", gifData.data[0].images)
