@@ -5,6 +5,7 @@ const searchEL = document.querySelector("#GIF-search")
 const inputEL = document.querySelector("#GIF-input")
 const submitEL = document.querySelector("#GIF-submit")
 const resultsEl = document.querySelector("#GIF-results")
+const loadButton= document.querySelector(".load")
 const MY_API_KEY = "nOjzgnRK5wSxGHruvjd3HVSux7Zxk46H"
 const limit = 10
 const rating = 'g'
